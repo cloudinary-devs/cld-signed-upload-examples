@@ -1,0 +1,46 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.nav li {
+  float: left;
+}
+
+ul.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li a:hover {
+  background-color: #111;
+}
+
+.ml-btn{
+  background-color: #0078FF;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 28px;
+  height: 28x;
+  cursor: pointer;
+  font-weight: normal;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 14px;
+}
