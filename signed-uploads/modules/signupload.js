@@ -2,18 +2,14 @@ require('dotenv').config()
 const cloudinary = require('cloudinary').v2
 const apiSecret = cloudinary.config().api_secret
 
-const crypto = require('crypto')
-const utf8 = require('utf8') // sha1 requires
-
 const signupload = () => {
-  const timestamp = new Date().getTime();
-  const strtosign = `source=uw&timestamp=${timestamp}${apiSecret}`;
-  const signature = utf8.encode(
-    crypto
-      .createHash('sha1')
-      .update(strtosign)
-      .digest('hex')
-  )
+  const timestamp = Math.round((new Date).getTime()/1000);
+
+  const signature = cloudinary.utils.api_sign_request({
+    timestamp: timestamp,
+    source: 'uw',
+    folder: 'signed_upload_demo_uw'}, apiSecret);
+  
   return { timestamp, signature }
 }
 
