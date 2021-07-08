@@ -4,6 +4,7 @@ const express = require('express')
 const path = require('path')
 
 const signuploadRouter = require('./routes/signupload')
+const signuploadformRouter = require('./routes/signuploadform')
 
 const app = express()
 
@@ -13,6 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // upload signing API
 app.use('/api/signupload', signuploadRouter)
+app.use('/api/signuploadform', signuploadformRouter)
 
 // static files
 app.use(express.static('public'))
