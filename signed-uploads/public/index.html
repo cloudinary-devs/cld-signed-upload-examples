@@ -10,41 +10,12 @@
 </head>
 
 <body>
-  <h2>Upload Files Using the Upload Widget</h2>
-  <p>Perform a signed upload using the upload widget.</p>
-  <p>Click "Upload Files" to open the upload widget.</p>
-  <div><button id="upload_widget" class="submit">Upload Files</button></div>
-  <div><img id="uploaded" /></div>
-  <h3>Upload response:</h3>
-  <pre class="data" id="uwdata">
-  
-  </pre>
-
-  <hr>
-
-  <h2>Upload Files Using a Form</h2>
-  <p>Perform a signed upload using a standard HTML form.</p>
-  <p>First, choose your files, then click "Upload Files" to perform a signed upload.</p>
-
-  <form method="post" enctype="multipart/form-data">
-    <input type="file" name="files[]" multiple >
-    <input type="submit" value="Upload Files" name="submit" class="submit">
-  </form>
-
-  <div><img id="uploaded_form" /></div>
-
-  <h3>Upload response:</h3>
-  <pre class="data" id="formdata">
-  
-  </pre>
-
-  <!-- cloudinary upload widget -->
-  <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
-
-  <!-- local upload instantiation -->
-  <script src="./js/upload-client.js" type="text/javascript"></script>
-  <script src="./js/upload-client-form.js" type="text/javascript"></script>
-
+  <h2>Demonstrating Signed Uploads</h2>
+  Choose the type of upload you want to try:
+  <ul>
+    <li><a href="uploadwidget.html">Upload Files Using the Upload Widget</a></li><br>
+    <li><a href="uploadform.html">Upload Files Using a Form</a></li>
+  </ul>
 
 </body>
 
