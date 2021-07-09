@@ -4,10 +4,12 @@ This code demonstrates two ways of performing a signed upload to Cloudinary from
 
 * Files specific to signed upload using Cloudinary's upload widget:
   * modules/signupload.js
+  * public/uploadwidget.html
   * public/js/upload-client.js
   * routes/signupload.js
 * Files specific to signed upload using a standard HTML form:
   * modules/signuploadform.js
+  * public/uploadform.html
   * public/js/upload-client-form.js
   * routes/signuploadform.js
 
