@@ -1,0 +1,2 @@
+language = "nodejs"
+run = "node signed-uploads/app.js"
