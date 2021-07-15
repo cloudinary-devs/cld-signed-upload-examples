@@ -1,6 +1,6 @@
 require('dotenv').config()
 const cloudinary = require('cloudinary').v2
-const apiSecret = cloudinary.config().api_secret
+//const apiSecret = cloudinary.config().api_secret
 
 const signuploadform = () => {
   const timestamp = Math.round((new Date).getTime()/1000);

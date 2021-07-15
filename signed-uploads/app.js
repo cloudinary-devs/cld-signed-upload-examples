@@ -6,6 +6,11 @@ const path = require('path')
 const signuploadRouter = require('./routes/signupload')
 const signuploadformRouter = require('./routes/signuploadform')
 
+// Enter your account details here
+global.apiKey = "";
+global.apiSecret = "";
+global.cloudName = "";
+
 const app = express()
 
 app.use(express.json())
@@ -39,3 +44,4 @@ app.use(function (err, req, res, next) {
 const port = process.env.PORT || 3000
 
 app.listen(port, () => console.info(`Server is up on http://localhost:${port}`))
+

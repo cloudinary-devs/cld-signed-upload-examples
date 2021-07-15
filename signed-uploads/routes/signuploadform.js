@@ -3,8 +3,8 @@ const router = express.Router()
 const signature = require('../modules/signuploadform')
 
 const cloudinary = require('cloudinary').v2
-const cloudName = cloudinary.config().cloud_name;
-const apiKey = cloudinary.config().api_key;
+//const cloudName = cloudinary.config().cloud_name;
+//const apiKey = cloudinary.config().api_key;
 
 // using this API should require authentication
 router.get('/', function (req, res, next) {
