@@ -18,9 +18,8 @@ This code demonstrates two ways of performing a signed upload to Cloudinary from
 1. Install all dependencies from the top level:
    
    `npm install`
-1. Copy (or rename) .env.template to .env.
-1. In .env set: 
-   * **CLOUDINARY_URL**: copy this from your dashboard
+1. Open **signed-uploads/public/js/config.js**
+1. Set `cloud_name`, `api_key` and `api_secret` with the corresponding account details from your dashboard
 1. Run the app to start the server:
     
     `node signed-uploads/app.js`
