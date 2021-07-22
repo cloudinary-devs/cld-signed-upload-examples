@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/carlevison/cld-signed-upload"
   },
+  "scripts": {
+    "start": "node signed-uploads/app.js"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
