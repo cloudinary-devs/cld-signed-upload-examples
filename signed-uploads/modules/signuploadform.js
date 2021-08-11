@@ -1,8 +1,9 @@
-require('dotenv').config();
 const cloudinary = require('cloudinary').v2;
 require('../public/js/config');
 const apiSecret = cloudinary.config().api_secret;
 
+// Server-side function used to sign an upload with a couple of
+// example eager transformations included in the request.
 const signuploadform = () => {
   const timestamp = Math.round((new Date).getTime()/1000);
 

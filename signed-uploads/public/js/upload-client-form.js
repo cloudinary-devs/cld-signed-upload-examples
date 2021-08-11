@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         const files = document.querySelector("[type=file]").files;
         const formData = new FormData();
     
+        // Append parameters to the form data. The parameters that are signed using 
+        // the signing function (signuploadform) need to match these.
         for (let i = 0; i < files.length; i++) {
             let file = files[i];
             formData.append("file", file);
