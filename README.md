@@ -1,4 +1,4 @@
-# cld-signed-upload
+# Cloudinary signed upload examples
 
 This code demonstrates two ways of performing a signed upload to Cloudinary from the browser, using a server to create the signature. One uses Cloudinary's upload widget, the other uses a standard HTML form.
 
@@ -13,7 +13,7 @@ This code demonstrates two ways of performing a signed upload to Cloudinary from
   * public/js/upload-client-form.js
   * routes/signuploadform.js
 
-## Setup instructions
+## Setup instructions (from GitHub)
 
 1. Install all dependencies from the top level:
    
