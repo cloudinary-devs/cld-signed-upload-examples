@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     uploadSignatureTimestamp: data.timestamp,
     uploadSignature: data.signature,
     cropping: false,
-    eager: 'c_pad,h_300,w_400|c_crop,h_200,w_260',
     folder: 'signed_upload_demo_uw'
   }
 
