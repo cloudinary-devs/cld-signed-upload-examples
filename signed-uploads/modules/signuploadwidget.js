@@ -3,7 +3,7 @@ require('../public/js/config');
 const apiSecret = cloudinary.config().api_secret;
 
 // Server-side function used to sign an Upload Widget upload.
-const signupload = () => {
+const signuploadwidget = () => {
   const timestamp = Math.round((new Date).getTime()/1000);
 
   const signature = cloudinary.utils.api_sign_request({
@@ -15,5 +15,5 @@ const signupload = () => {
 }
 
 module.exports = {
-  signupload
+  signuploadwidget
 }

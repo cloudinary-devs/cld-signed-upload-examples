@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const signature = require('../modules/signupload');
+const signature = require('../modules/signuploadwidget');
 require('../public/js/config');
 
 const cloudinary = require('cloudinary').v2
@@ -9,7 +9,7 @@ const apiKey = cloudinary.config().api_key;
 
 // using this API should require authentication
 router.get('/', function (req, res, next) {
-  const sig = signature.signupload()
+  const sig = signature.signuploadwidget()
   res.json({
     signature: sig.signature,
     timestamp: sig.timestamp,

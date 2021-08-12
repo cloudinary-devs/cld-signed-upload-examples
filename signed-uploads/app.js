@@ -2,7 +2,7 @@ const createError = require('http-errors')
 const express = require('express')
 const path = require('path')
 
-const signuploadRouter = require('./routes/signupload')
+const signuploadwidgetRouter = require('./routes/signuploadwidget')
 const signuploadformRouter = require('./routes/signuploadform')
 
 const app = express()
@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 // upload signing API
-app.use('/api/signupload', signuploadRouter)
+app.use('/api/signuploadwidget', signuploadwidgetRouter)
 app.use('/api/signuploadform', signuploadformRouter)
 
 // static files

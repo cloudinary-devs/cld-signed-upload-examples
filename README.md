@@ -3,23 +3,23 @@
 This code demonstrates two ways of performing a signed upload to Cloudinary from the browser, using a server to create the signature. One uses Cloudinary's upload widget, the other uses a standard HTML form.
 
 * Files specific to signed upload using Cloudinary's upload widget:
-  * modules/signupload.js
+  * modules/signuploadwidget.js
   * public/uploadwidget.html
-  * public/js/upload-client.js
-  * routes/signupload.js
+  * public/js/uploadclientwidget.js
+  * routes/signuploadwidget.js
 * Files specific to signed upload using a standard HTML form:
   * modules/signuploadform.js
   * public/uploadform.html
-  * public/js/upload-client-form.js
+  * public/js/uploadclientform.js
   * routes/signuploadform.js
 
-## Setup instructions (from GitHub)
+## Setup instructions (after cloning from GitHub)
 
 1. Install all dependencies from the top level:
    
    `npm install`
 1. Open **signed-uploads/public/js/config.js**
-1. Set `cloud_name`, `api_key` and `api_secret` with the corresponding account details from your dashboard
+1. Set `cloud_name`, `api_key` and `api_secret` with the corresponding account details from your dashboard.
 1. Run the app to start the server:
     
     `node signed-uploads/app.js`

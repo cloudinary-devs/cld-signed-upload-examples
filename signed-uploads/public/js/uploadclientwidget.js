@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  const response = await fetch('/api/signupload');
+  const response = await fetch('/api/signuploadwidget');
   const data = await response.json();
 
   const options = {
