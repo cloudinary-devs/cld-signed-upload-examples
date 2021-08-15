@@ -19,7 +19,7 @@ This code demonstrates two ways of performing a signed upload to Cloudinary from
    
    `npm install`
 1. Open **signed-uploads/public/js/config.js**
-1. Set `cloud_name`, `api_key` and `api_secret` with the corresponding account details from your dashboard.
+1. Set `cloud_name`, `api_key` and `api_secret` with the corresponding account details from your Cloudinary dashboard.
 1. Run the app to start the server:
     
     `node signed-uploads/app.js`
@@ -28,3 +28,15 @@ This code demonstrates two ways of performing a signed upload to Cloudinary from
 
     `Server is up on http://localhost:3000`
 1. Open `http://localhost:3000` in a browser.
+
+## Setup instructions (if running on Glitch)
+
+1. Open **signed-uploads/public/js/config.js**
+1. Set `cloud_name`, `api_key` and `api_secret` with the corresponding account details from your Cloudinary dashboard.
+1. Click **View App**.
+
+## Links
+
+GitHub: [https://github.com/cloudinary-devs/cld-signed-upload-examples](https://github.com/cloudinary-devs/cld-signed-upload-examples)
+
+Glitch: [https://glitch.com/~cld-signed-upload-examples](https://glitch.com/~cld-signed-upload-examples)
